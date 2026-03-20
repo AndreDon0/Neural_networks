@@ -6,6 +6,23 @@
 
 Этот репозиторий заведен для обучения и хранения материалов по университетскому курсу «Теория нейронных сетей». Здесь представлены исходные коды лабораторных работ, Jupyter-ноутбуки с решениями и условия задач.
 
+## Quick Start (using `uv`)
+
+1. Install `uv` (Astral):
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+2. Install dependencies into the local virtual environment:
+   ```bash
+   uv sync
+   ```
+3. Run the project entrypoint:
+   ```bash
+   uv run python main.py
+   ```
+
+Tip (Jupyter): when you open notebooks, make sure the selected kernel matches the environment that `uv sync` created (typically `.venv`).
+
 ## 📅 Сроки сдачи (Дедлайны)
 
 
@@ -50,3 +67,7 @@
 - 🗂️ [Датасет для ЛР 3 (data_lab3.zip)](./files/ЛР_3/data_lab3.zip)
 
 **Почта для проверки:** `baskakova.av.m@gmail.com`
+
+---
+
+**Лекции по курсу доступны на сайте:** [Теория нейронных сетей на DataLearning](https://datalearning.ru/index.php/neuralnetworks)
