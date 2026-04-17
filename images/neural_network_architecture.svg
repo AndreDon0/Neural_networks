@@ -1,0 +1,47 @@
+<svg width="1180" height="180" viewBox="0 0 1180 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Neural network architecture diagram">
+  <defs>
+    <style>
+      .box { fill:#f8fafc; stroke:#334155; stroke-width:2; rx:10; ry:10; }
+      .txt { font: 14px sans-serif; fill:#0f172a; }
+      .small { font: 12px sans-serif; fill:#334155; }
+      .arrow { stroke:#475569; stroke-width:2.5; marker-end:url(#m); }
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="24" class="txt" style="font-weight:700;">NeuralNetwork.linear (Sequential)</text>
+
+  <rect class="box" x="20" y="60" width="150" height="70"/>
+  <rect class="box" x="210" y="60" width="150" height="70"/>
+  <rect class="box" x="400" y="60" width="170" height="70"/>
+  <rect class="box" x="610" y="60" width="150" height="70"/>
+  <rect class="box" x="800" y="60" width="150" height="70"/>
+  <rect class="box" x="990" y="60" width="170" height="70"/>
+
+  <text x="95" y="88" text-anchor="middle" class="txt">Linear</text>
+  <text x="95" y="108" text-anchor="middle" class="small">2 -&gt; 100, bias=True</text>
+
+  <text x="285" y="95" text-anchor="middle" class="txt">ReLU</text>
+
+  <text x="485" y="88" text-anchor="middle" class="txt">Linear</text>
+  <text x="485" y="108" text-anchor="middle" class="small">100 -&gt; 100, bias=True</text>
+
+  <text x="685" y="95" text-anchor="middle" class="txt">ReLU</text>
+
+  <text x="875" y="88" text-anchor="middle" class="txt">Linear</text>
+  <text x="875" y="108" text-anchor="middle" class="small">100 -&gt; 4, bias=True</text>
+
+  <text x="1075" y="88" text-anchor="middle" class="txt">Softmax</text>
+  <text x="1075" y="108" text-anchor="middle" class="small">dim=1</text>
+
+  <line class="arrow" x1="170" y1="95" x2="210" y2="95"/>
+  <line class="arrow" x1="360" y1="95" x2="400" y2="95"/>
+  <line class="arrow" x1="570" y1="95" x2="610" y2="95"/>
+  <line class="arrow" x1="760" y1="95" x2="800" y2="95"/>
+  <line class="arrow" x1="950" y1="95" x2="990" y2="95"/>
+
+  <text x="20" y="155" class="small">Input: [batch, 2]</text>
+  <text x="1030" y="155" class="small">Output: [batch, 4]</text>
+</svg>
